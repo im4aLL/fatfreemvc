@@ -1,0 +1,16 @@
+{
+    "name": "test/task",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Habib Hadi",
+            "email": "me@habibhadi.com"
+        }
+    ],
+    "require": {
+        "bcosca/fatfree": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {"App\\": "app/"}
+    }
+}
