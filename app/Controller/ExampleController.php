@@ -6,7 +6,8 @@ use App\Model\ExampleModel;
 
 class ExampleController extends Controller
 {
-    public function index() {
+    public function index()
+    {
         $model = new ExampleModel($this->f3);
         $this->f3->set('data', $model->all());
         

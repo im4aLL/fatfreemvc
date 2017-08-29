@@ -2,7 +2,9 @@
 
 namespace App\Model;
 
-class Model 
+use App\Library\Database;
+
+class Model
 {
     /**
      * Database class instance
@@ -31,9 +33,10 @@ class Model
      * 
      * @param type object
      */
-    public function __construct($f3) {
+    public function __construct($f3)
+    {
         $this->f3 = $f3;
-        $this->db = new \App\Library\Database();
+        $this->db = new Database();
         
         $this->db->connect($this->f3->get('config.database'));
     }
@@ -43,7 +46,8 @@ class Model
      * 
      * @return array
      */
-    public function all() {
+    public function all()
+    {
         return $this->db->query('SELECT * FROM '.$this->table)->get();
     }
 }

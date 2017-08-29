@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-class Controller {
-    
+class Controller
+{
     /**
      * Global framework object
      * 
@@ -17,7 +17,8 @@ class Controller {
      * 
      * @param type object
      */
-    public function __construct($f3) {
+    public function __construct($f3)
+    {
         $this->f3 = $f3;
     }
 }
